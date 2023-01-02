@@ -3,7 +3,7 @@ package customer
 import (
 	"database/sql"
 	"log"
-	"os"
+	
 
 	_ "github.com/lib/pq"
 	_ "github.com/proullon/ramsql/driver"
@@ -12,7 +12,7 @@ import (
 var db *sql.DB
 
 func init() {
-	conn, err := sql.Open(os.Getenv("DATABASE_DRIVER"), os.Getenv("DATABASE_URL"))
+	conn, err := sql.Open("postgres","postgres://wddhwbsh:dYftALDi3cTkaIk-ONyvjjUh9Z_jxMH3@tiny.db.elephantsql.com/wddhwbsh")
 	if err != nil {
 		log.Fatal("can't connect to database", err)
 	}

@@ -1,4 +1,4 @@
-module github.com/AnuchitO/restapi
+module github.com/supanut-tanon/assessment
 
 go 1.19
 

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/AnuchitO/restapi/customer"
 	"github.com/labstack/echo/v4"
+	"github.com/supanut-tanon/assessment/customer"
 )
 
 func setupRoute() *echo.Echo {
