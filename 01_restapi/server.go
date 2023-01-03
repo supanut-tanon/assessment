@@ -32,7 +32,7 @@ func setupRoute() *echo.Echo {
 	e.POST("/expense", expense.CreateHandler)
 	e.GET("/expense/:id", expense.GetExpenseByIdHandler)
 	e.PUT("/expense/:id", expense.UpdateExpenseHandler)
-	// e.GET("/customers", customer.GetCustomersHandler)
+	e.GET("/expense", expense.GetExpenseHandler)
 	
 
 	return e
